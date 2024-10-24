@@ -7,8 +7,6 @@ return {
 		lint.linters_by_ft = {
 			python = { "pylint" },
 			gdscript = { "gdtoolkit" },
-			c = { "cpplint" },
-			go = { "golangci-lint" },
 			rust = { "bacon" },
 		}
 

@@ -35,6 +35,9 @@ return {
 				"remark_ls",
 				"rust_analyzer",
 				"zls",
+				"templ",
+				"tailwindcss",
+				"htmx",
 			},
 		})
 
@@ -50,7 +53,6 @@ return {
 				"gofumpt",
 				"clang-format",
 				"gdtoolkit",
-				"cpplint",
 				"golangci-lint",
 				"bacon",
 			},

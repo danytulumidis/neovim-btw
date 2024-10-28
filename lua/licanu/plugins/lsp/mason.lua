@@ -38,6 +38,10 @@ return {
 				"templ",
 				"tailwindcss",
 				"htmx",
+				"ts_ls",
+				"html",
+				"cssls",
+				"angularls",
 			},
 		})
 

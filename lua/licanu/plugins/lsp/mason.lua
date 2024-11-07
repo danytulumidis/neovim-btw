@@ -42,6 +42,7 @@ return {
 				"html",
 				"cssls",
 				"angularls",
+				"svelte",
 			},
 		})
 

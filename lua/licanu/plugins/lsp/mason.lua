@@ -43,6 +43,7 @@ return {
 				"cssls",
 				"angularls",
 				"svelte",
+				"vuels",
 			},
 		})
 

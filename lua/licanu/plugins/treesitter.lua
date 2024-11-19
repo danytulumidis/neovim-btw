@@ -44,6 +44,7 @@ return {
 				"gdscript",
 				"go",
 				"templ",
+				"svelte",
 			},
 			incremental_selection = {
 				enable = true,

@@ -41,9 +41,6 @@ return {
 				"ts_ls",
 				"html",
 				"cssls",
-				"angularls",
-				"svelte",
-				"vuels",
 			},
 		})
 

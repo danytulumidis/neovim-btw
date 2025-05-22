@@ -600,8 +600,9 @@ require("lazy").setup({
 				-- WEB
 				tailwindcss = {},
 				html = {},
+				cssls = {},
 				svelte = {},
-				volar = {},
+				vuels = {},
 
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
@@ -864,6 +865,8 @@ require("lazy").setup({
 				"javascript",
 				"typescript",
 				"css",
+				"vue",
+				"svelte",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,

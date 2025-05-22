@@ -76,6 +76,8 @@ vim.opt.confirm = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 
+vim.bo.textwidth = 130
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -85,6 +87,7 @@ vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+vim.keymap.set("n", "<leader>sq", vim.diagnostic.open_float, { desc = "Open current diagnostic in extra window" })
 
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
 -- for people to discover. Otherwise, you normally need to press <C-\><C-n>, which
@@ -806,7 +809,22 @@ require("lazy").setup({
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		config = function()
 			---@diagnostic disable-next-line: missing-fields
-			require("catppuccin").setup({})
+			require("catppuccin").setup({
+				flavour = "macchiato",
+				integrations = {
+					blink_cmp = true,
+					cmp = true,
+					treesitter = true,
+					mason = true,
+					alpha = true,
+					indent_blankline = {
+						enabled = true,
+						scope_color = "rosewater", -- catppuccin color (eg. `lavender`) Default: text
+						colored_indent_levels = false,
+					},
+					which_key = true,
+				},
+			})
 
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load

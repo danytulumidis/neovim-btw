@@ -605,7 +605,6 @@ require("lazy").setup({
 				html = {},
 				cssls = {},
 				svelte = {},
-				vue_ls = {},
 
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
@@ -658,18 +657,6 @@ require("lazy").setup({
 					end,
 				},
 			})
-
-			-- For Vue!
-			local lspconfig = require("lspconfig")
-
-			lspconfig.volar.setup({
-				init_options = {
-					vue = {
-						hybridMode = false,
-					},
-				},
-			})
-			-- For Vue!
 		end,
 	},
 

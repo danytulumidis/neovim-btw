@@ -605,6 +605,9 @@ require("lazy").setup({
 				html = {},
 				cssls = {},
 				svelte = {},
+				jsonls = {},
+				dockerls = {},
+				sqlls = {},
 
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
@@ -882,8 +885,8 @@ require("lazy").setup({
 				"javascript",
 				"typescript",
 				"css",
-				"vue",
 				"svelte",
+				"json",
 			},
 			-- Autoinstall languages that are not installed
 			auto_install = true,
